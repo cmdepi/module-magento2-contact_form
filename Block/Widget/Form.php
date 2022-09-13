@@ -20,4 +20,23 @@ class Form extends Template implements BlockInterface
      *
      */
     protected $_template = "widget/form.phtml";
+
+    /**
+     *
+     * Get form additional information HTML
+     *
+     * @return string
+     *
+     * @note Allow configured an optional block to add additional information to this form
+     *
+     */
+    public function getFormAdditionalInfoHtml()
+    {
+        /**
+         *
+         * @note Return additional HTML
+         *
+         */
+        return $this->getChildHtml('form_additional_info');
+    }
 }
