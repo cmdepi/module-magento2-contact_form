@@ -25,13 +25,29 @@ class Form extends Template implements BlockInterface
      *
      * Get form additional information HTML
      *
+     * @param Template|null $block
+     *
      * @return string
      *
      * @note Allow configured an optional block to add additional information to this form
      *
      */
-    public function getFormAdditionalInfoHtml()
+    public function getFormAdditionalInfoHtml(Template $block = null)
     {
+        /**
+         *
+         * @note Check block
+         *
+         */
+        if (!is_null($block)) {
+            /**
+             *
+             * @note Return block HTML
+             *
+             */
+            return $block->toHtml();
+        }
+
         /**
          *
          * @note Return additional HTML
