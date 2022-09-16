@@ -199,7 +199,7 @@ require(['jquery', 'Magento_Ui/js/modal/alert'], function($, alert) {
                 var data = $(this).serialize();
                 $.ajax({
                     showLoader: true,
-                    url       : '<?php echo $block->getUrl('contact/contact/send') ?>',
+                    url       : '<?php echo $block->getContactUrl() ?>',
                     data      : data,
                     type      : 'POST',
                     dataType  : 'json'

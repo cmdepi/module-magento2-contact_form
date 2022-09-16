@@ -23,6 +23,18 @@ class Form extends Template implements BlockInterface
 
     /**
      *
+     * Get contact URL
+     *
+     * @return string
+     *
+     */
+    public function getContactUrl()
+    {
+        return $this->getUrl('contact/contact/send');
+    }
+
+    /**
+     *
      * Get form additional info block
      *
      * @return Template|null
