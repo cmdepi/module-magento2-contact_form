@@ -15,48 +15,39 @@
 & when (@media-common = true) {
     /**
      *
-     * @note Popup
+     * @note Form
      *
      */
-    .catalog-contact-form-popup {
-        pointer-events: auto;
-
+    .contact-form-widget-container {
         /**
          *
-         * @note Form
+         * @note Input field
          *
          */
-        .contact-form-widget-container {
+        .input-field {
+            display        : flex;
+            justify-content: space-between;
+            flex-direction : column;
+            margin         : 2% 0;
+
             /**
              *
-             * @note Input field
+             * @note Label
              *
              */
-            .input-field {
-                display        : flex;
-                justify-content: space-between;
-                flex-direction : column;
-                margin         : 2% 0;
+            label {
+                order     : 1;
+                flex-basis: 15%;
+            }
 
-                /**
-                 *
-                 * @note Label
-                 *
-                 */
-                label {
-                    order     : 1;
-                    flex-basis: 15%;
-                }
-
-                /**
-                 *
-                 * @note Input
-                 * @note Textarea
-                 *
-                 */
-                input, textarea {
-                    order: 2;
-                }
+            /**
+             *
+             * @note Input
+             * @note Textarea
+             *
+             */
+            input, textarea {
+                order: 2;
             }
         }
     }
