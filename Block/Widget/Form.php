@@ -19,7 +19,7 @@ class Form extends Template implements BlockInterface
      * @var string
      *
      */
-    protected $_template = "widget/form.phtml";
+    protected $_template = "Bina_ContactForm::widget/form.phtml";
 
     /**
      *
