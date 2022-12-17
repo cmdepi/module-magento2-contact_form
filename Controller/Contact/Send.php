@@ -108,7 +108,7 @@ class Send extends Action
          */
         try {
             $this->_sendEmail($this->_validatedContactParams());
-            $data['message'] = __('Thank you very much for your contact! We will get back to you as quickly as possible.');
+            $data['message'] = __('Thank you very much for your contact! You will get a response as soon as possible.');
         }
         catch (LocalizedException $e) {
             $data['message'] = __($e->getMessage());
